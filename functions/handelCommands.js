@@ -18,11 +18,9 @@ module.exports = (client) => {
                 client.commandArray.push(command.data);
             }
         }
-
         const rest = new REST({
             version: '9'
         }).setToken(process.env.token);
-
         (async () => {
             try {
                 console.log('Started refreshing application (/) commands.');
@@ -32,10 +30,7 @@ module.exports = (client) => {
                         body: client.commandArray
                     },
                 );
-
-                console.log('Successfully reloaded application (/) commands.');
-                
-
+                console.log('Successfully reloaded application (/) commands.');               
             } catch (error) {
                 console.error(error);
             }
