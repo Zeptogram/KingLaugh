@@ -11,20 +11,16 @@ var ch = 0;
 module.exports = {
 	data: new SlashCommandBuilder()
                 .setName("laugh")
-				.setDescription("HEHEHEHA")
-				.addStringOption((option) =>
-					option.setName("times").setDescription("HEHEHEHA").setRequired(false)
-				)
+		.setDescription("HEHEHEHA")
+		.addStringOption((option) =>
+			option.setName("times").setDescription("HEHEHEHA").setRequired(false))
                 .addStringOption((option) =>
-					option.setName("channel").setDescription("For  Jumpscares, HEHEHEHA").setRequired(false)
-				),
-        
-                  
+			option.setName("channel").setDescription("For  Jumpscares, HEHEHEHA").setRequired(false)),
+    
 	async execute(interaction, client) {
 		 
         global.interaction = interaction;
         console.log(interaction.user.tag + " used command " + interaction.commandName + " in " + interaction.guild.name + " at " + interaction.createdAt )
-
         //check if user is connected to a voice channel
         if (!interaction.member.voice.channel) {
             if(interaction.options.getString("channel") == null) 
@@ -48,15 +44,12 @@ module.exports = {
                 adapterCreator: interaction.guild.voiceAdapterCreator
             }).subscribe(audioPlayer)
         }
-        //Check if channel is valid
-        
-
-        // Prendo argument
+ 	// Checks
         let t = interaction.options.getString("times")
         if(!t)  t = 1; 
         if(t > 20) t = 20;
         if(t < 1) t = 1;
-        // Funzione ricorsiva che riproduce audio
+		
         await interaction.reply("HEHEHEHA!")
         audiop(t);
 
@@ -73,18 +66,17 @@ module.exports = {
                 audiop(t);
             }
         });
-	},
+    },
 }
 
 async function audiop(times){
-    // Caso base
+    // Base case
     if(times == 1){
         done = true;
     }
     // Select random file name from folder "Audio"
     var files = fs.readdirSync(join(__dirname, '../Audio'));
     var file = files[Math.floor(Math.random() * files.length)];
-
     resource = createAudioResource(fs.createReadStream(join(__dirname, '../Audio', file)), {
             inputType: StreamType.Arbitrary,
             inlineVolume: true,
