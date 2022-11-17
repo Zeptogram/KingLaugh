@@ -10,7 +10,7 @@
     "ffmpeg-static": "^5.1.0"
   },
   "name": "kinglaugh",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "description": "discord bot",
   "main": "index.js",
   "scripts": {
