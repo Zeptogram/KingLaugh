@@ -22,6 +22,6 @@ Add it to your server: https://discord.com/api/oauth2/authorize?client_id=930863
 ### Info
 - Shows some information about the bot.
 
-Made by Shia.
+By Shia.
 
-EOF
+
