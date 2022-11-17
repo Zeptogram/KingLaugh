@@ -1,5 +1,5 @@
 # King Laugh
-Welcome to this readme file!
+King Laugh Bot by Shia
 
 This is a simple discord bot made with node.js (and some youtube videos ;)) <br>
 Feel free to use and edit the bot! <br>
@@ -22,6 +22,6 @@ Add it to your server: https://discord.com/api/oauth2/authorize?client_id=930863
 ### Info
 - Shows some information about the bot.
 
-By Shia.
+
 
 
