@@ -10,7 +10,6 @@ module.exports = {
         pickPresence();
 
         async function pickPresence () {
-
             try {
                 await client.user.setPresence({
                     activities: [
@@ -18,9 +17,7 @@ module.exports = {
                             name: 'Laughing as always!',
                             type: ActivityType.Watching,
                         },
-                    
                     ],
-
                 })
             } catch (error) {
                 console.error(error);
