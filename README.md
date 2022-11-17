@@ -1,7 +1,7 @@
 # King Laugh
 King Laugh Bot by Shia
 
-This is a simple discord bot made with node.js (and some youtube videos ;)) <br>
+This is a simple discord bot made with node.js (and some youtube videos ;)). It uses slash commands. <br>
 Feel free to use and edit the bot! <br>
 Add it to your server: https://discord.com/api/oauth2/authorize?client_id=930863494604156940&permissions=420876709201&scope=applications.commands%20bot
 
