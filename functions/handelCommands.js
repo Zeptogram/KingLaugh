@@ -1,6 +1,8 @@
 const { REST } = require("@discordjs/rest");
 const { Routes } = require('discord-api-types/v9');
+const { Guild } = require("discord.js");
 const fs = require('fs');
+const { Player } = require("discord-player")
 
 
 const clientId = process.env.clientId;

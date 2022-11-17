@@ -16,5 +16,5 @@ const commandFolders = fs.readdirSync("./commands");
     client.handleEvents(eventFiles, "./events");
     client.handleCommands(commandFolders, "./commands");
     client.login(process.env.token)
-});
+})();
 
