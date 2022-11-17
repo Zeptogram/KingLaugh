@@ -1,8 +1,8 @@
 # King Laugh
 Welcome to this readme file!
 
-This is a simple discord bot made with node.js (and some youtube videos ;))
-Feel free to use and edit the bot! 
+This is a simple discord bot made with node.js (and some youtube videos ;)) <br>
+Feel free to use and edit the bot! <br>
 Add it to your server: https://discord.com/api/oauth2/authorize?client_id=930863494604156940&permissions=420876709201&scope=applications.commands%20bot
 
 ## Commands
