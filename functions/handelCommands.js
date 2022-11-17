@@ -37,6 +37,6 @@ module.exports = (client) => {
             } catch (error) {
                 console.error(error);
             }
-        });
+        })();
     };
 };
