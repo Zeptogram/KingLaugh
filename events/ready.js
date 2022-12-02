@@ -6,7 +6,7 @@ module.exports = {
     async execute(client) {
 
         console.log("Bot launched correctly at:" , Date.now());
-        setInterval(pickPresence, 900000);
+        setInterval(pickPresence, 60000);
         pickPresence();
 
         async function pickPresence () {
